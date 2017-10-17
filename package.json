@@ -1,0 +1,34 @@
+{
+  "name": "pdfy",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "Creates PDF documents from HTML templates using Headless Chrome",
+  "author": {
+    "email": "martinelliruan@gmail.com",
+    "name": "Ruan Martinelli",
+    "url": "https://ruanmartinelli.com"
+  },
+  "keywords": [
+    "pdf",
+    "html",
+    "nodejs",
+    "puppeteer",
+    "chrome",
+    "headless",
+    "template"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "puppeteer": "^0.12.0",
+    "uuid": "^3.1.0"
+  },
+  "scripts": {
+    "test": "npm run lint && ./node_modules/.bin/ava --verbose",
+    "lint": "./node_modules/.bin/standard --fix"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "ava": "^0.22.0"
+  }
+}
