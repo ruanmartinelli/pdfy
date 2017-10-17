@@ -1,5 +1,7 @@
 # pdfy 
 
+[![Build Status](https://travis-ci.org/ruanmartinelli/pdfy.svg?branch=master)](https://travis-ci.org/ruanmartinelli/pdfy)
+
 > Creates PDF documents from HTML templates using Headless Chrome.
 
 ## Install
