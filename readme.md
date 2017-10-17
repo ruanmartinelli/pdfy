@@ -39,6 +39,8 @@ await pdfy(`<h1> Hello {{user}} </h1>`, { user: 'James' }, options)
 
 ### Bootstrap Styles
 
+See [example](https://github.com/ruanmartinelli/pdfy/blob/master/examples/bootstrap.pdf)
+
 ```js
 const pdfy = require('pdfy');
 const axios = require('axios');
