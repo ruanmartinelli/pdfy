@@ -1,6 +1,8 @@
 # pdfy 
 
 [![Build Status](https://travis-ci.org/ruanmartinelli/pdfy.svg?branch=master)](https://travis-ci.org/ruanmartinelli/pdfy)
+[![NPM downloads](https://img.shields.io/npm/dm/pdfy.svg?style=flat)](https://npmjs.com/package/pdfy)
+[![Dependencies](https://david-dm.org/ruanmartinelli/pdfy.svg)](https://david-dm.org/ruanmartinelli/pdfy)
 
 > Creates PDF documents from HTML templates using Headless Chrome.
 
@@ -23,8 +25,10 @@ $ npm install --save pdfy
 ```js
 const pdfy = require('pdfy');
 
-await pdfy(`<h1> Hello {{user}} </h1>`, { user: 'James' })
-//=> <Buffer 25 50 44 46 2d 31 2e ...
+pdfy(`<h1> Hello {{user}} </h1>`, { user: 'James' })
+  .then(buff => {
+     //=> <Buffer 32 40 2a ... >
+  })
 ```
 
 ### Save the file
@@ -33,11 +37,13 @@ await pdfy(`<h1> Hello {{user}} </h1>`, { user: 'James' })
 const pdfy = require('pdfy');
 const options = { path: 'example.pdf' } // Just add the path in options
 
-await pdfy(`<h1> Hello {{user}} </h1>`, { user: 'James' }, options)
-//=> <Buffer 25 50 44 46 2d 31 2e ...
+pdfy(`<h1> Hello {{user}} </h1>`, { user: 'James' }, options)
+//=> <Promise<Buffer>>
 ```
 
 ### Bootstrap Styles
+
+See [example](https://github.com/ruanmartinelli/pdfy/blob/master/examples/bootstrap.pdf)
 
 ```js
 const pdfy = require('pdfy');
@@ -63,8 +69,8 @@ const template = `
       </body>
     </html>`;
 
-await pdfy(template, { user: 'James', bootstrap });
-//=> <Buffer 25 50 44 46 2d 31 2e ...
+pdfy(template, { user: 'James', bootstrap });
+//=> <Promise<Buffer>>
 ```
 
 ## API
