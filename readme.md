@@ -31,7 +31,7 @@ pdfy(`<h1> Hello {{user}} </h1>`, { user: 'James' })
   })
 ```
 
-### Save the file
+### Saving files
 
 ```js
 const pdfy = require('pdfy');
@@ -41,7 +41,7 @@ pdfy(`<h1> Hello {{user}} </h1>`, { user: 'James' }, options)
 //=> <Promise<Buffer>>
 ```
 
-### Bootstrap Styles
+### Bootstrap styles
 
 See [example](https://github.com/ruanmartinelli/pdfy/blob/master/examples/bootstrap.pdf)
 
