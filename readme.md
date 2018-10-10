@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/ruanmartinelli/pdfy.svg?branch=master)](https://travis-ci.org/ruanmartinelli/pdfy)
 [![NPM downloads](https://img.shields.io/npm/dm/pdfy.svg?style=flat)](https://npmjs.com/package/pdfy)
-[![Dependencies](https://david-dm.org/ruanmartinelli/pdfy.svg)](https://david-dm.org/ruanmartinelli/pdfy)
+[![Dependencies](https://david-dm.org/ruanmartinelli/pdfy.svg)](https://david-dm.org/ruanmartinelli/pdfy) [![Greenkeeper badge](https://badges.greenkeeper.io/ruanmartinelli/pdfy.svg)](https://greenkeeper.io/)
 
 > Creates PDF documents from HTML templates using Headless Chrome.
 
